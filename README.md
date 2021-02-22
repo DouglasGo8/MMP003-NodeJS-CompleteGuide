@@ -10,6 +10,7 @@ node -v
 
 [***DDD Hexagonal Sample***](https://github.com/eugenp/tutorials/tree/master/ddd)
 
+[***Mastering Async Functions***](https://blog.risingstack.com/mastering-async-await-in-nodejs/)
 
 ## Async functions with Babel
 
