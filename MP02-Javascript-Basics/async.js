@@ -7,7 +7,7 @@ const fetchData = (func) => {
 };
 
 const fetchData2 = () => {
-  const promise = new Promise((resolve, reject) => {
+  const promise = new Promise((resolve) => {
     setTimeout(() => {
       resolve("Done");
     }, 1500);

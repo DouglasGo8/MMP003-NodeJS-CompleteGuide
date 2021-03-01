@@ -16,25 +16,17 @@ node -v
 
 ```html
 
-npm i @babel/core @babel/preset-env @babel/register @babel/polyfill --saved-dev
+npm i npm i -D babel-core babel-polyfill babel-preset-es2015 babel-preset-stage-0 babel-loader
+ --saved-dev
 
 app.js { // only content
-    
     const Koa = require('koa') -> import Koa from 'koa';
     import '@babel/polyfill';
-
     async f1 (p) => {
         return 'Hello ' + p;
     }
-
-
     const resp = await f1('param');
-
-
-
-
 }
-
 
 .babelrc { // only content
     {
@@ -44,15 +36,21 @@ app.js { // only content
     }
 }
 
-
 bootstrap.js { // only content
     require('@babel/register')({})
     module.exports = require('./app.js)
 }
-
 
 package.json { // only content
     "start": "node bootstrap.js"
 }
 
 ```
+
+## Core Modules
+
+* http
+* https
+* fs
+* path
+* os
