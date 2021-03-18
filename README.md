@@ -14,11 +14,11 @@ node -v
 
 ## Async functions with Babel
 
+```bash
+npm i @babel/core @babel/preset-env @babel/register @babel/polyfill --save-dev
+```
+
 ```html
-
-npm i npm i -D babel-core babel-polyfill babel-preset-es2015 babel-preset-stage-0 babel-loader
- --saved-dev
-
 app.js { // only content
     const Koa = require('koa') -> import Koa from 'koa';
     import '@babel/polyfill';
@@ -44,7 +44,6 @@ bootstrap.js { // only content
 package.json { // only content
     "start": "node bootstrap.js"
 }
-
 ```
 
 ## Core Modules
@@ -54,3 +53,7 @@ package.json { // only content
 * fs
 * path
 * os
+
+## NodeJS Event Loop
+
+* Keeps on running as long as there are event listeners registered, e.g http.createServer(...).listen(port)
